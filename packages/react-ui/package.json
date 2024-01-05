@@ -1,0 +1,45 @@
+{
+  "name": "@kaendahan/react-ui",
+  "version": "0.0.0",
+  "description": "A UI library built with Tailwind CSS for creating responsive and customizable user interface components.",
+  "main": "./dist/index.esm.js",
+  "types": "./dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "rimraf dist && rimraf types && rollup -c --bundleConfigAsCjs",
+    "publish": "echo ada"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaendahan/ui.git"
+  },
+  "keywords": [
+    "UI",
+    "Tailwind",
+    "CSS",
+    "components",
+    "web",
+    "development"
+  ],
+  "author": "kaendahan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kaendahan/ui/issues"
+  },
+  "homepage": "https://github.com/kaendahan/ui#readme",
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-terser": "^0.4.4",
+    "rollup": "^4.9.3",
+    "rollup-plugin-dts": "^6.1.0",
+    "rollup-plugin-filesize": "^10.0.0",
+    "rollup-plugin-generate-package-json": "^3.2.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-typescript2": "^0.36.0"
+  }
+}

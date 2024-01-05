@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "build:react-ui": "cd packages/react-ui && npm run build",
+    "publish:react-ui": "cd packages/react-ui && npm run publish"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -24,5 +26,8 @@
     "eslint-plugin-react-refresh": "^0.4.5",
     "typescript": "^5.2.2",
     "vite": "^5.0.8"
-  }
+  },
+  "workspaces": [
+    "packages/react-ui"
+  ]
 }
